@@ -18,8 +18,8 @@ class OtherCommands():
         for id in admins:
             try:
                 await self.dp.bot.set_my_commands([
-                    self.types.BotCommand("update_join_message", "Обновить рекламное сообщение"),
-                    self.types.BotCommand("check_join_message", "Проверить рекламное сообщение"),
+                    self.types.BotCommand("update_join_message", "Обновить start сообщение"),
+                    self.types.BotCommand("check_join_message", "Проверить start сообщение"),
                     self.types.BotCommand("get_users", "Выгрузить пользователей"),
                     self.types.BotCommand("show_links", "Показать реферальные ссылки"),
                     self.types.BotCommand("add_link", "Добавить ссылку")

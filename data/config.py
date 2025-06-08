@@ -3,7 +3,7 @@ from mongodb.bot_data_connection import mongo_conn_controller
 
 conf = ConfigObj("data/settings.ini", encoding='UTF8')
 
-bot_token = "6062088609:AAFIQMq1EqjFp0RStjtkyZb3gxl45YoXmvg" #conf['token']['token']
+bot_token = conf['token']['token'] #"6062088609:AAFIQMq1EqjFp0RStjtkyZb3gxl45YoXmvg" #conf['token']['token']
 
 class configs:
     def __init__(self):

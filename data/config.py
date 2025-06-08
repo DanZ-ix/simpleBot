@@ -19,7 +19,7 @@ class configs:
     async def set_configs(self, bot_name):
         await mongo_conn_controller.connect_server()
         bot = await mongo_conn_controller.db.bots.find_one({"bot_name": bot_name})
-        local = True
+        local = False #True
         try:
             if local:                       # bot.get('dialog_max_tokens')
                 self.admin_ids = ["154134326"] # bot.get('admins')
